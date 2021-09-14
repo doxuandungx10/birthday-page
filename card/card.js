@@ -8,6 +8,10 @@
     closeB = $('close'),
     timer = null;
   console.log('wat', card);
+  console.log(cake)
+  cakevelas.addEventListener('click', function () {
+    document.getElementById("gaugau").play()
+  });
   openB.addEventListener('click', function () {
     document.getElementById("player2").play();
     card.setAttribute('class', 'open-half');

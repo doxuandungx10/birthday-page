@@ -12,7 +12,7 @@
         margin: 0;
         height: 100vh;
         font-weight: 100;
-        background: radial-gradient(#a23982, #1f1013);
+        background: radial-gradient(#221455, #1f1013);
         -webkit-overflow-Y: hidden;
         -moz-overflow-Y: hidden;
         -o-overflow-Y: hidden;
@@ -56,8 +56,8 @@
         position: absolute;
         width: 0px;
         opacity: .75;
-        background-color: white;
-        box-shadow: #e9f1f1 0px 0px 20px 2px;
+        background-color: rgb(247, 176, 229);
+        box-shadow: #f3abe9 0px 0px 20px 2px;
         opacity: 0;
         top: 100vh;
         bottom: 0px;
@@ -282,10 +282,10 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: 'Roboto', sans-serif;
-        font-weight: 200;
+        font-family: cursive;
+        font-weight: inherit;
         color: white;
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     #head1,
@@ -326,10 +326,10 @@
     }
 
     #head4 {
-        -webkit-animation: fadeOut 1 5s ease-in;
-        -moz-animation: fadeOut 1 5s ease-in;
-        -o-animation: fadeOut 1 5s ease-in;
-        animation: fadeOut 1 5s ease-in;
+        -webkit-animation: fadeOut 1 4s ease-in;
+        -moz-animation: fadeOut 1 4s ease-in;
+        -o-animation: fadeOut 1 4s ease-in;
+        animation: fadeOut 1 4s ease-in;
         -webkit-animation-delay: 14s;
         -moz-animation-delay: 14s;
         -o-animation-delay: 14s;
@@ -345,10 +345,10 @@
         -moz-animation-fill-mode: forwards;
         -o-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-        -webkit-animation-delay: 20s;
-        -moz-animation-delay: 20s;
-        -o-animation-delay: 20s;
-        animation-delay: 20s;
+        -webkit-animation-delay: 19s;
+        -moz-animation-delay: 19s;
+        -o-animation-delay: 19s;
+        animation-delay: 19s;
     }
 
     @-webkit-keyframes fadeIn {
@@ -545,16 +545,72 @@
         transform: translate(95vw, 90vh);
         transform: translate(95vw, 90vh);
     }
+
+    .button {
+        opacity: 0;
+        transition: opacity 0.02s;
+        display: inline-block;
+        position: relative;
+        top: 58%;
+        left: 45.5%;
+        padding: 0.75rem 1.25rem;
+        font-family: cursive;
+        border-radius: 10rem;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        text-decoration: none;
+    }
+
+    .button:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(174, 67, 201);
+        border-radius: 10rem;
+        z-index: -2;
+    }
+
+    .button:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: rgb(115, 36, 167);
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+
+    .button:hover {
+        color: #fff;
+    }
+
+    .button:hover:before {
+        width: 100%;
+    }
 </style>
 
 <body>
-    <script>
+    <!-- <script>
         setTimeout("location.href = '../card/Card.html';", 23000);
-    </script>
+    </script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <a href="../candle/Candles.html" id="continue" class="button">Continue..</a>
     <p id='head1' class='header'>This is my small gift</p>
     <p id='head2' class='header'>..a webpage to celebrate this specical day</p>
-    <p id='head3' class='header'>just for you, my babe!</p>
+    <p id='head3' class='header'>just for you, babe!</p>
     <p id='head4' class='header'>Now...</p>
     <p id='head5' class='header'>...hope you'll enjoy it!</p>
     <!-- <button>Continue</button> -->
@@ -567,6 +623,11 @@
     <div class='light x7'></div>
     <div class='light x8'></div>
     <div class='light x9'></div>
+    <script>
+        setTimeout(function () {
+            document.getElementById("continue").style.opacity = 1
+        }, 21500);
+    </script>
 </body>
 
 </html>

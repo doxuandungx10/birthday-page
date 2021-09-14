@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 * {
@@ -60,7 +61,7 @@ body {
 
 #card h1 {
   text-align: center;
-  font-family: 'Great Vibes', cursive;
+  font-family: cursive;
   font-style: italic;
   font-weight: inherit;
   font-size: 70px;
@@ -71,7 +72,7 @@ body {
 #card-inside {
   font-size: 1.3em;
   line-height: 1.4;
-font-family: cursive;
+font-family: 'Indie Flower';
   color: #331717;
   font-style: italic;
 }
@@ -207,7 +208,7 @@ font-family: 'Lobster', cursive;
 
 .cake_and_velas {
   position: absolute;
-  bottom: 15%;
+  bottom: 12%;
   left: 0;
   right: 0;
   overflow: hidden;
@@ -220,76 +221,79 @@ font-family: 'Lobster', cursive;
 }
 
 .velas {
-  background: #ffffff;
-  border-radius: 10px;
+  /* background: #ffffff; */
+  /* border-radius: 10px; */
   position: absolute;
-  top: 228px;
-  left: 50%;
+  top: 138px;
+  left: 36%;
   margin-left: -2.4px;
   margin-top: -8.33333333px;
-  width: 5px;
-  height: 35px;
+  width: 140px;
+  height: 140px;
   -webkit-transform: translateY(-300px);
           transform: translateY(-300px);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-animation: in 500ms 5s ease-out forwards;
           animation: in 500ms 5s ease-out forwards;
+        
 }
 
-.velas:after,
-.velas:before {
-  background: rgba(255, 0, 0, 0.4);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2.22222222px;
+
+/* .velas:hover>#dog {
+  display: none;
 }
 
-.velas:after {
-  top: 25%;
-  left: 0;
-}
-
-.velas:before {
-  top: 45%;
-  left: 0;
-}
-
-.ani {
+.velas:hover>#dog2 {
+  display: block;
+} */
+img {
   border-radius: 100%;
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  margin-left: -2.6px;
-  width: 6.66666667px;
-  height: 18px;
+  position: relative;
+  top: 0;
+  left:0;
+  /* margin-left: -2.6px; */
+  width: 140px;
+  height: 140px;
 }
 
-.ani:nth-child(1) {
+#dog2 {
+  display: none;
+}
+.cake_and_velas:hover {
+  cursor: pointer;
+}
+.cake_and_velas:hover #dog {
+  display: none;
+}
+.cake_and_velas:hover #dog2 {
+  display: block;
+}
+/* 
+img:nth-child(1) {
   -webkit-animation: ani 2s 5.5s infinite;
           animation: ani 2s 5.5s infinite;
 }
 
-.ani:nth-child(2) {
+img:nth-child(2) {
   -webkit-animation: ani 1.5s 5.5s infinite;
           animation: ani 1.5s 5.5s infinite;
 }
 
-.ani:nth-child(3) {
+img:nth-child(3) {
   -webkit-animation: ani 1s 5.5s infinite;
           animation: ani 1s 5.5s infinite;
 }
 
-.ani:nth-child(4) {
+img:nth-child(4) {
   -webkit-animation: ani 0.5s 5.5s infinite;
           animation: ani 0.5s 5.5s infinite;
 }
 
-.ani:nth-child(5) {
+img:nth-child(5) {
   -webkit-animation: ani 0.2s 5.5s infinite;
           animation: ani 0.2s 5.5s infinite;
-}
+} */
 
 /* ============================================== Animation Fire
 */
