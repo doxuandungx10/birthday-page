@@ -412,10 +412,10 @@ img:nth-child(5) {
           backface-visibility: hidden;
   background-position: center;
   background-size: cover;
-  -webkit-animation: fade-in 10s ease-in;
+  /* -webkit-animation: fade-in 10s ease-in;
           animation: fade-in 10s ease-in;
   -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+          animation-iteration-count: 1; */
 }
 
 @-webkit-keyframes fade-in {
