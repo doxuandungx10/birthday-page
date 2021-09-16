@@ -83,7 +83,7 @@ $(document).ready(function () {
 });
 function Yeu() {
 	$("#divResult").fadeOut(0);
-	$("#divResult").html("</br><h2>Hahaha you were been tricked again <img src='img/icon.gif'></img>!</h2>");
+	$("#divResult").html("</br><h2>Hahaha you were tricked again <img src='img/icon.gif'></img>!</h2>");
 	$("#divResult").fadeIn(2000, function () {
 		$("#divResult2").fadeOut(0);
 
