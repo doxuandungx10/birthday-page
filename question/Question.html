@@ -47,6 +47,9 @@
       var top = y + 'px'
       document.getElementById('lbNo').style.left = left
       document.getElementById('lbNo').style.top = top
+
+      document.getElementById("bruh").play()
+
     }
     function dongy() {
       if (kt == false) {
@@ -57,11 +60,23 @@
       }
     }
   </script>
+  <script>
+    var bruh_sound = getElementById('lbNo');
+    bruh_sound.addEventListener('mouse', function () {
+      document.getElementById("bruh").play()
+    });
+  </script>
   <link href="css/dataurl.css" rel="stylesheet" />
 
 </head>
 
 <body onload="popup('<p></p></br>'); on()" onunload="s()">
+  <div style="position: fixed; display: none;">
+    <!-- <embed src="fireworks.mp3" autostart="true" loop="true"> -->
+    <audio id="bruh" controls>
+      <source src="../audio/bruh.mp3" type="audio/mp3">
+    </audio>
+  </div>
   <div id="bg"></div>
   <div id="myModal" class="reveal-modal large">
     <div id="traloi">
@@ -97,6 +112,9 @@
       });
     });
   </script>
+
+
+
   <div id="dialog-overlay"></div>
   <div id="dialog-box">
     <div class="dialog-content">
@@ -125,6 +143,8 @@
       <input type="button" value="NOOOOO @#^$)%&!" style="cursor:pointer;" onMouseMove="move()">
     </div>
   </center>
+
+
 
   <div class="music" style="display: none;">
     <object width="1" height="1">
