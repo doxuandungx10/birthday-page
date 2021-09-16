@@ -96,6 +96,6 @@ function Yeu() {
 		// );
 	}
 	);
-	setTimeout("location.href = '../card/Card.html';", 5000);
+	setTimeout("location.href = '../intro2/Intro2.html';", 5000);
 
 }

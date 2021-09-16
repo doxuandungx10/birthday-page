@@ -31,7 +31,7 @@ $(function () {
                 },
                 2000
             );
-            setTimeout("location.href = '../question/Question.html';", 10000);
+            setTimeout("location.href = '../question/Question.html';", 12000);
 
         }
     });
