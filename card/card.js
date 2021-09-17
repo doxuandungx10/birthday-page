@@ -23,6 +23,8 @@
   });
 
   closeB.addEventListener('click', function () {
+    document.getElementById("player2").pause();
+
     card.setAttribute('class', 'close-half');
     if (timer) clearTimerout(timer);
     timer = setTimeout(function () {

@@ -60,12 +60,7 @@
       }
     }
   </script>
-  <script>
-    var bruh_sound = getElementById('lbNo');
-    bruh_sound.addEventListener('mouse', function () {
-      document.getElementById("bruh").play()
-    });
-  </script>
+
   <link href="css/dataurl.css" rel="stylesheet" />
 
 </head>
@@ -75,6 +70,15 @@
     <!-- <embed src="fireworks.mp3" autostart="true" loop="true"> -->
     <audio id="bruh" controls>
       <source src="../audio/bruh.mp3" type="audio/mp3">
+    </audio>
+    <audio id="troll" controls>
+      <source src="../audio/troll.mp3" type="audio/mp3">
+    </audio>
+    <audio id="incorrect" controls>
+      <source src="../audio/incorrect.mp3" type="audio/mp3">
+    </audio>
+    <audio id="oidoioi" controls>
+      <source src="../audio/oidoioi.mp3" type="audio/mp3">
     </audio>
   </div>
   <div id="bg"></div>
@@ -90,7 +94,7 @@
         <input id="form" name="txt" type="text" />
 
         <div>
-          <input id="gui" onclick="Yeu();" type="button" value="SEND" />
+          <input id="gui" onkeypress="troll()" onclick="Yeu();" type="button" value="SEND" />
         </div>
       </form>
     </div>
@@ -136,7 +140,7 @@
 
   <center>
     <div id="co">
-      <a href="#" data-reveal-id="myModal">YESSS IT'S ME!!</a>
+      <a id="co_troll" href="#" data-reveal-id="myModal">YESSS IT'S ME!!</a>
     </div>
 
     <div id="lbNo" style="position:absolute; left: 900px; top: 70%; background-color: #0f2794;">
@@ -144,6 +148,20 @@
     </div>
   </center>
 
+  <script language="javascript">
+    $(document).ready(function () {
+      $('#co_troll').click(function () {
+        $('#troll').play()
+      });
+    });
+  </script>
+
+  <script>
+    var co_troll = getElementById('co');
+    co_troll.addEventListener('click', function () {
+      document.getElementById("troll").play()
+    });
+  </script>
 
 
   <div class="music" style="display: none;">

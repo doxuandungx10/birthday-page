@@ -7,12 +7,7 @@ $(function () {
     // head5.hide();
     button1.on({
         click: function () {
-            // while (1) {
-            //     button1.fadeOut(3000);
-            //     button2.fadeIn(3000);
-            //     head4.fadeOut(3000);
-            //     // button1.fadeIn(3000);
-            // }
+            document.getElementById("troll").play()
             head4.fadeOut(2500)
             button1.fadeOut(1500);
             button2.fadeOut(200);
@@ -39,6 +34,7 @@ $(function () {
     });
     button2.on({
         click: function () {
+            document.getElementById("troll").play()
             head4.fadeOut(3000)
             button1.fadeOut(1500);
             button2.fadeOut(200);

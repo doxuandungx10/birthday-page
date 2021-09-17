@@ -81,7 +81,11 @@ $(document).ready(function () {
 		}
 	});
 });
+function troll() {
+	document.getElementById("troll").play()
+}
 function Yeu() {
+	document.getElementById("oidoioi").play()
 	$("#divResult").fadeOut(0);
 	$("#divResult").html("</br><h2>Hahaha you were tricked again <img src='img/icon.gif'></img>!</h2>");
 	$("#divResult").fadeIn(2000, function () {
